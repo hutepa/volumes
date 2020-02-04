@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>[% template.title or "Nemty - Radius Management Application" %]</title>
+
+    <!-- Global stylesheets -->
+    <link href="../static/static/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="../static/static/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../static/static/css/core.css" rel="stylesheet" type="text/css">
+    <link href="../static/static/css/components.css" rel="stylesheet" type="text/css">
+    <link href="../static/static/css/colors.css" rel="stylesheet" type="text/css">
+    <!-- /global stylesheets -->
+
+    <!-- Core JS files -->
+    <script type="text/javascript" src="../static/static/js/core/libraries/jquery.min.js"></script>
+    <script type="text/javascript" src="../static/static/js/core/libraries/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../static/static/js/core/libraries/bootstrap_select.min.js"></script>
+    <!-- /core JS files -->
+
+    <!-- Theme JS files -->
+    <script type="text/javascript" src="../static/static/js/core/app.js"></script>
+    <!-- /theme JS files -->
+
+</head>
+
+<body class="login-container bg-slate-800">
+
+<!-- Page container -->
+<div class="page-container">
+
+    <div class="page-content">
+
+        <div class="content-wrapper">
+
+            <div class="content">
+                <form method="POST" action="/login">
+                    <div class="panel panel-body login-form">
+                        <div class="text-center">
+                            <div > <img src="../static/static/images/agility.gif" alt="Agility" height="82" width="197"> </div>
+
+                            <div><h5 class="content-group-lg"> <small class="display-block">Login to your account</small></h5></div>
+                        </div>
+
+                            <h5 class="m-t-30 m-b-10">Select filer</h5>
+                             <select name="vserver" class="select2 form-control custom-select" style="width: 100%; height:36px;" >
+                                            <option>KW1PESANV01</option>
+                                            <option>SG1PESANV01</option>
+                             </select>
+
+                        <div class="form-group has-feedback has-feedback-left">
+                            <input type="text" name="username" class="form-control" placeholder="Username">
+                            <div class="form-control-feedback">
+                                <i class="icon-user text-muted"></i>
+                            </div>
+                        </div>
+
+                        <div class="form-group has-feedback has-feedback-left">
+                            <input type="password" name="password" class="form-control" placeholder="Password">
+                            <div class="form-control-feedback">
+                                <i class="icon-lock2 text-muted"></i>
+                            </div>
+                        </div>
+
+                        <div class="form-group login-options">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" class="styled" checked="checked">
+                                        Remember
+                                    </label>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="submit" name="submit" value="Login" class="btn bg-blue btn-block">
+                        </div>
+                        <div class="content-divider text-muted form-group"><span class="help-block text-center no-margin">Developed by <a href="mailto:scroveez@gmail.com">Mahmoud Abdelsalam</a></span></div>
+                    </div>
+                </form>
+                <!-- /advanced login -->
+
+            </div>
+            <!-- /content area -->
+
+        </div>
+        <!-- /main content -->
+
+    </div>
+    <!-- /page content -->
+
+</div>
+<!-- /page container -->
+
+</body>
+</html>
